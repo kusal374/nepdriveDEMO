@@ -1,6 +1,6 @@
 // Supabase Configuration
-const SUPABASE_URL = 'your_supabase_url';
-const SUPABASE_ANON_KEY = 'your_supabase_anon_key';
+const SUPABASE_URL = 'https://exgyekfwnztnaawaueuu.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImV4Z3lla2Z3bnp0bmFhd2F1ZXV1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3MzY5MzYzNDksImV4cCI6MjA1MjUxMjM0OX0.XecyfG2CsjzhVySSo7YfaTAEDBYRGmlAuKnl6KAX_YU';
 const API_URL = 'http://localhost:3000/api';
 
 // Helper Functions
