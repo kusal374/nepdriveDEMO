@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Ride - NepDrive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250116_100940-3PDlxb7DGwn1Peoe2xqi974DgYdbqO.png" alt="NepDrive Logo" class="logo-small">
+            <nav>
+                <a href="profile.html">Profile</a>
+                <a href="tracking.html">Track Ride</a>
+                <button id="logoutBtn" class="logout-button">Logout</button>
+            </nav>
+        </header>
+        
+        <main class="ride-content">
+            <div class="booking-card">
+                <h2>Book a Ride</h2>
+                
+                <form id="bookingForm" class="booking-form">
+                    <div class="form-group">
+                        <input type="text" id="pickup" name="pickup" required>
+                        <label for="pickup">Pickup Location</label>
+                    </div>
+                    
+                    <div class="form-group">
+                        <input type="text" id="destination" name="destination" required>
+                        <label for="destination">Destination</label>
+                    </div>
+                    
+                    <div class="ride-options">
+                        <button type="button" class="ride-type" data-type="standard">
+                            Standard
+                            <span class="price">$10</span>
+                        </button>
+                        
+                        <button type="button" class="ride-type" data-type="premium">
+                            Premium
+                            <span class="price">$15</span>
+                        </button>
+                    </div>
+                    
+                    <button type="submit" class="book-button">Book Now</button>
+                </form>
+            </div>
+            
+            <div id="nearbyDrivers" class="drivers-list">
+                <h3>Nearby Drivers</h3>
+                <!-- Drivers will be populated dynamically -->
+            </div>
+        </main>
+        
+        <footer>
+            <p>ALL RIGHTS RESERVED.NEPDRIVE.2024</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
