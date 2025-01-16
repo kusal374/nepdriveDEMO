@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Ride - NepDrive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="dashboard-header">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/20250116_100940-3PDlxb7DGwn1Peoe2xqi974DgYdbqO.png" alt="NepDrive Logo" class="logo-small">
+            <nav>
+                <a href="profile.html">Profile</a>
+                <a href="ride.html">Book Ride</a>
+                <button id="logoutBtn" class="logout-button">Logout</button>
+            </nav>
+        </header>
+        
+        <main class="tracking-content">
+            <div class="tracking-card">
+                <h2>Current Ride Status</h2>
+                
+                <div id="rideStatus" class="status-container">
+                    <p class="status">Status: <span id="currentStatus">No active ride</span></p>
+                </div>
+                
+                <div class="location-options">
+                    <button id="openGoogle<cut_off_point>
+div class="location-options">
+                    <button id="openGoogle
+</cut_off_point>
+
+Maps" class="map-button">Open in Google Maps</button>
+                    <button id="viewInApp" class="map-button">View in App</button>
+                </div>
+                
+                <div class="ride-details">
+                    <div class="detail-item">
+                        <label>Driver:</label>
+                        <span id="driverName">-</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <label>Vehicle:</label>
+                        <span id="vehicleInfo">-</span>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <label>ETA:</label>
+                        <span id="estimatedTime">-</span>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>ALL RIGHTS RESERVED.NEPDRIVE.2024</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
