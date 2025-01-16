@@ -1,34 +1,482 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NepDrive - Your Trusted Ride Service</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <div class="logo-placeholder">
-                <!-- Replace this text with your logo or brand name -->
-                <h1>NepDrive</h1>
-            </div>
-        </header>
-        
-        <!-- Main Content Section -->
-        <main class="welcome-content">
-            <h1>WELCOME TO <br>"NEPDRIVE"</h1>
-            <div class="cta-container">
-                <a href="signup.html" class="cta-button">ENTER SIGNUP & LOGIN</a>
-            </div>
-        </main>
-        
-        <!-- Footer Section -->
-        <footer>
-            <p>&copy; 2025 NepDrive. ALL RIGHTS RESERVED.</p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap');
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    min-height: 100vh;
+    line-height: 1.6;
+    letter-spacing: -0.02em;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    position: relative;
+}
+
+/* Logo Styles */
+.logo {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    display: block;
+}
+
+/* Welcome Page Styles */
+.welcome-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 30px; /* Reduced the gap for closer alignment */
+    margin-top: -20px;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+    font-size: 1.125rem;
+    margin-top: 20px; /* Added margin to separate the buttons */
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Sign Up and Login buttons */
+.signup-button, .login-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 20px auto;
+    border-radius: 32px;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+}
+
+.signup-button:hover, .login-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Signup Page Styles */
+.signup-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.signup-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.signup-content {
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #000000;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: border-color 0.2s ease;
+}
+
+.form-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FFFFFF;
+    padding: 0 8px;
+    color: #000000;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.signup-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 20px auto;
+    border-radius: 32px;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+}
+
+.signup-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Login Page Styles */
+.login-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.login-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 24px;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+}
+
+.login-button:hover {
+    transform: translateY(-2px);
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 24px;
+    font-weight: 500;
+}
+
+.form-footer a {
+    color: #000000;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Dashboard Header Styles */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 2px solid #000000;
+    background: #FFFFFF;
+}
+
+.logo-small {
+    width: 120px;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #666666;
+}
+
+.logout-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+}
+
+.logout-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Profile Page Styles */
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.profile-card {
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    display: grid;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.profile-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile-field label {
+    font-weight: 700;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.edit-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+    margin-top: 24px;
+}
+
+.edit-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Tracking Page Styles */
+.tracking-content {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tracking-card {
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status-container {
+    margin: 24px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.location-options {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.map-button {
+    flex: 1;
+    padding: 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+}
+
+.map-button:hover {
+    transform: translateY(-2px);
+}
+
+.ride-details {
+    margin-top: 24px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    font-weight: 500;
+}
+
+/* Ride Booking Page Styles */
+.ride-content {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.booking-card {
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 32px;
+    border-radius: 16px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ride-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 24px 0;
+}
+
+.ride-type {
+    padding: 24px;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.ride-type.selected {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.price {
+    font-weight: 800;
+    font-size: 1.25rem;
+}
+
+.book-now-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.book-now-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Footer Styles */
+footer {
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 30px;
+}
