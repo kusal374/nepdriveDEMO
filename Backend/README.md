@@ -1,7 +1,27 @@
 # NepDrive Backend
 
-This is the backend for the NepDrive auto-riding service. It provides API endpoints for user authentication, ride management, and location tracking.
+## Setup Instructions
 
-## Setup
+### Prerequisites
+- Node.js (v14+ recommended)
+- npm
 
-1. Install dependencies:
+### Installation
+1. Clone the repository
+2. Navigate to backend directory
+3. Run `npm install`
+
+### Environment Configuration
+1. Create `.env` file
+2. Add required environment variables
+
+### Running the Server
+- Development: `npm run dev`
+- Production: `npm start`
+
+### API Endpoints
+- `/api/signup`: User registration
+- `/api/login`: User authentication
+- `/api/profile/:userId`: User profile management
+- `/api/ride/request`: Ride booking
+- `/api/location/update`: Location tracking
