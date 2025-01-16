@@ -526,6 +526,32 @@ footer p {
     background-color: #121212;
 }
 
+.dark .cta-button {
+    background-color: #333333;
+    color: #FFFFFF;
+}
+
+.dark .cta-button:hover {
+    background-color: #555555;
+}
+
+/* Additional Styles for the Dark Mode Toggle Button */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+.dark .container {
+    background-color: #121212;
+}
+
 .dark .form-group input {
     border-color: #FFFFFF;
     color: #FFFFFF;
