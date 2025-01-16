@@ -30,43 +30,94 @@ body {
 
 /* Logo Styles */
 .logo {
-    width: 220px; /* Increased logo size */
+    width: 180px;
     height: auto;
     object-fit: contain;
-    margin-bottom: 20px;
+    margin: 0;
     display: block;
 }
 
-/* Login Page Styles */
-.login-content {
+.logo-small {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    display: block;
+}
+
+/* Welcome Page Styles */
+.welcome-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 50px;
+    margin-top: -20px;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin: 0;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #000000;
+    color: #FFFFFF;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+    font-size: 1.125rem;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Signup Page Styles */
+.signup-header {
     width: 100%;
-    max-width: 400px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.signup-title {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.signup-content {
+    width: 100%;
+    max-width: 600px;
     margin: 40px auto;
     padding: 40px;
     background: #FFFFFF;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
 }
 
-h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 30px; /* Added margin-bottom for spacing */
-    display: inline-block; /* Ensures straight alignment of text */
-    text-align: center; /* Aligns the text horizontally */
-}
-
-/* Form Styles */
-.login-form {
+.signup-form {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 100%;
+    margin-top: 30px;
 }
 
 .form-group {
@@ -103,6 +154,42 @@ h2 {
     font-weight: 700;
 }
 
+.signup-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1.125rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: fit-content;
+    margin: 20px auto;
+    border-radius: 32px;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+}
+
+.signup-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Login Page Styles */
+.login-content {
+    width: 100%;
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 40px;
+    background: #FFFFFF;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .login-button {
     background-color: #000000;
     color: #FFFFFF;
@@ -113,7 +200,7 @@ h2 {
     cursor: pointer;
     text-transform: uppercase;
     width: 100%;
-    margin-top: 24px; /* Added margin-top for spacing */
+    margin-top: 24px;
     letter-spacing: 0.05em;
     transition: transform 0.2s ease;
 }
@@ -134,20 +221,172 @@ h2 {
     font-weight: 600;
 }
 
-/* Footer Styles */
-footer {
+/* Dashboard Header Styles */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    text-align: center;
+    padding: 20px;
+    border-bottom: 2px solid #000000;
+    background: #FFFFFF;
 }
 
-footer p {
+/* Resizing the logo in the profile page */
+.logo-small {
+    width: 20px;  /* Adjust the size as needed */
+    height: auto;
+    object-fit: contain;
+    margin-right: 10px;
+}
+nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
     font-weight: 700;
+    text-transform: uppercase;
     letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #666666;
+}
+
+.logout-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+}
+
+.logout-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Profile Page Styles */
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.profile-card {
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+    display: grid;
+    gap: 24px;
+    margin: 24px 0;
+}
+
+.profile-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile-field label {
+    font-weight: 700;
     font-size: 0.875rem;
     text-transform: uppercase;
-    color: #000000;
+    letter-spacing: 0.05em;
+}
+
+.edit-button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+    margin-top: 24px;
+}
+
+.edit-button:hover {
+    transform: translateY(-2px);
+}
+
+/* Tracking Page Styles */
+.tracking-content {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.tracking-card {
+    background-color: #FFFFFF;
+    border: 2px solid #000000;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.status-container {
+    margin: 24px 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.location-options {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.map-button {
+    flex: 1;
+    padding: 16px;
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: transform 0.2s ease;
+}
+
+.map-button:hover {
+    transform: translateY(-2px);
+}
+
+.ride-details {
+    margin-top: 24px;
+}
+
+.detail-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
 }
