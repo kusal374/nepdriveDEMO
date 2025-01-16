@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - NepDrive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Dashboard Header -->
+        <header class="dashboard-header">
+            <!-- Placeholder for Logo (replaceable) -->
+            <div class="logo-small">
+                <img src="https://i.postimg.cc/XJpJ51pZ/20250116-100940.png" alt="NepDrive Logo" class="logo-image">
+            </div>
+            
+            <!-- Navigation Links -->
+            <nav>
+                <a href="ride.html">Book Ride</a>
+                <a href="tracking.html">Track Ride</a>
+                <button id="logoutBtn" class="logout-button">Logout</button>
+            </nav>
+        </header>
+        
+        <!-- Profile Content Section -->
+        <main class="profile-content">
+            <!-- Profile Card -->
+            <div class="profile-card">
+                <h2>Profile Information</h2>
+                
+                <div class="profile-details">
+                    <!-- Profile Fields -->
+                    <div class="profile-field">
+                        <label>Full Name</label>
+                        <p id="profileName">John Doe</p>
+                    </div>
+                    
+                    <div class="profile-field">
+                        <label>Email</label>
+                        <p id="profileEmail">johndoe@example.com</p>
+                    </div>
+                    
+                    <div class="profile-field">
+                        <label>Phone</label>
+                        <p id="profilePhone">+977 9876543210</p>
+                    </div>
+                    
+                    <div class="profile-field">
+                        <label>Role</label>
+                        <p id="profileRole">User</p>
+                    </div>
+                </div>
+                
+                <!-- Edit Profile Button -->
+                <button id="editProfileBtn" class="edit-button">Edit Profile</button>
+            </div>
+            
+            <!-- Ride History Section -->
+            <div class="ride-history">
+                <h3>Recent Rides</h3>
+                <div id="rideHistory" class="ride-list">
+                    <!-- Placeholder for Ride History -->
+                    <p>No recent rides available.</p>
+                </div>
+            </div>
+        </main>
+        
+        <!-- Footer Section -->
+        <footer>
+            <p>ALL RIGHTS RESERVED. NEPDRIVE. 2024</p>
+        </footer>
+    </div>
+    <!-- External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
